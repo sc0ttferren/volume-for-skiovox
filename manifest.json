@@ -20,8 +20,5 @@
     "16": "vfsicon.png",
     "48": "vfsicon.png",
     "128": "vfsicon.png"
-  },
-  "content_security_policy": {
-    "extension_pages": "popup.html"
   }
 }
