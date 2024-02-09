@@ -1,0 +1,31 @@
+// manifest.json
+{
+  "manifest_version": 2,
+  "name": "Volume Display For Skiovox",
+  "version": "1.0",
+  "description": "Displays volume when adjusted on Skiovox browser",
+  "permissions": [
+    "audio"
+  ],
+  "browser_action": {
+    "default_icon": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "permissions": [
+    "storage",
+    "activeTab",
+    "audio"
+  ],
+  "content_security_policy": {
+    "extension_pages": "popup.html"
+  }
+}
