@@ -1,5 +1,6 @@
 chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
-  chrome.tabs.sendMessage(tabs[0].id, { action: "getVolume" }, function (response) {
-    document.getElementById("volumeDisplay").innerText = "Volume: " + response.volume;
+  chrome.tabs.executeScript(tabs[0].id, { code: 'document.volume' }, function (result) {
+    const volume = result && result[0] ? result[0] : 'N/A';
+    document.getElementById("volumeDisplay").innerText = "Volume: " + volume;
   });
 });
