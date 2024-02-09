@@ -4,26 +4,23 @@
   "version": "1.0",
   "description": "Displays volume when adjusted on Skiovox browser",
   "permissions": [
-    "audio"
+    "audio",
+    "storage",
+    "activeTab"
   ],
   "browser_action": {
     "default_icon": {
-      "16": "icon.png",
-      "48": "icon.png",
-      "128": "icon.png"
+      "16": "vfsicon.png",
+      "48": "vfsicon.png",
+      "128": "vfsicon.png"
     },
     "default_popup": "popup.html"
   },
   "icons": {
-    "16": "icon.png",
-    "48": "icon.png",
-    "128": "icon.png"
+    "16": "vfsicon.png",
+    "48": "vfsicon.png",
+    "128": "vfsicon.png"
   },
-  "permissions": [
-    "storage",
-    "activeTab",
-    "audio"
-  ],
   "content_security_policy": {
     "extension_pages": "popup.html"
   }
